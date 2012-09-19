@@ -391,15 +391,15 @@ static char UIScrollViewInfiniteScrollingView;
 
 @dynamic pullToRefreshView, showsPullToRefresh, infiniteScrollingView, showsInfiniteScrolling;
 
-- (void)willMoveToSuperview:(UIView *)newSuperview {
-    if(!newSuperview) {
-        [self.pullToRefreshView removeFromSuperview];
-        self.pullToRefreshView = nil;
-        
-        [self.infiniteScrollingView removeFromSuperview];
-        self.infiniteScrollingView = nil;
-    }
-}
+//- (void)willMoveToSuperview:(UIView *)newSuperview {
+//    if(!newSuperview) {
+//        [self.pullToRefreshView removeFromSuperview];
+//        self.pullToRefreshView = nil;
+//        
+//        [self.infiniteScrollingView removeFromSuperview];
+//        self.infiniteScrollingView = nil;
+//    }
+//}
 
 - (void)addPullToRefreshWithActionHandler:(void (^)(void))actionHandler {
     self.pullToRefreshView.pullToRefreshActionHandler = actionHandler;
